@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myFirstapp">
+  <head>
+    <meta charset="utf-8">
+
+    <title>First AngularJS Application</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+  </head>
+  <body>
+    <h2>Simple Example of AngularJS</h2>
+    
+    <div ng-controller="myController">
+      <h4> This Examples give the concept of declarative data binding since change in the textbox is bind to the display part.</h4>
+      Type name here: <input type="text" ng-model="name">
+      <br>
+       Hello my Name is:{{name}}
+      <br>
+      <br>
+      <strong>The function module of js file is diplayed using the expression</strong>
+      <br>
+      {{sayHello()}}
+    </div>
+
+  </body>
+</html>
