@@ -1,4 +1,4 @@
 # AngularJS
 Understanding AngularJS by Example
 
-https://ydvdh.github.io/AngularJS/index.html
+https://ydvdh.github.com/AngularJS/index.html
