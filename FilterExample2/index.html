@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="filterApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Addtional Filter in AngularJS</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="filterController">
+    <p>Type the name of the country you want to search:</p>
+    <p><input type="text" ng-model="test"</p>
+    <ul>
+      <li ng-repeat="x in Countries|filter:test">
+        {{x}}
+      </li>
+    </ul>
+    <p>This list contain the name matching the filter.</p>
+    <p>This is the Example of sort filter: You can sort by name and by country name</p>
+    <table border="1px">
+      <tr>
+        <th ng-click="OrderByFunction('name')">Name</th>
+        <th ng-click="OrderByFunction('country')">Country</th>
+      </tr>
+      <tr ng-repeat="x in PersonDetail | orderBy:myOrderBy">
+      <td>{{x.name}}</td>
+      <td>{{x.Country}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
