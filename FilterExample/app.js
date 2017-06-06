@@ -13,7 +13,7 @@
       $scope.price=2.50;
       $scope.price1=getPrice(price);
       $scope.inputText=ConvertToUpperCase(inputText);
-
+      $scope.Counties=['Nepal','USA','Canada'];
       function getDate() {
         return new Date();
       }
